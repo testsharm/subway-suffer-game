@@ -1,20 +1,11 @@
-# Metro Dash
+# Metro Dash 3D
 
-A fast, original endless-runner browser game built with vanilla HTML, CSS, and JavaScript. Dodge express trains and barriers, switch lanes, jump, slide, and collect signal coins as the speed ramps up.
+A playable WebGL 3D endless runner built with Three.js. It includes a three-lane rail environment, perspective camera, lighting, fog, shadows, trains, barriers, coins, jumping, sliding, progressive speed, score persistence, and responsive keyboard controls.
 
-## Play
-
-Open `index.html` in a browser, or serve the repository with any static server:
+Run with a static server because ES modules require HTTP:
 
 ```bash
 npx serve .
 ```
 
-Controls:
-
-- **Left / Right** or **A / D** — change lanes
-- **Up / Space** or **W** — jump
-- **Down** or **S** — slide
-- On mobile, swipe or use the on-screen buttons
-
-The best score is stored locally in the browser. All visuals are generated in code; there are no external game assets.
+Controls: A/D or arrow keys to change lanes, W/Space/Up to jump, S/Down to slide.
