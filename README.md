@@ -1,6 +1,6 @@
-# Metro Dash 3D
+# Metro Dash: Nightline
 
-A playable WebGL 3D endless runner built with Three.js. It includes a three-lane rail environment, perspective camera, lighting, fog, shadows, trains, barriers, coins, jumping, sliding, progressive speed, score persistence, and responsive keyboard controls.
+A polished browser-based 3D endless runner built with Three.js. Features include progressive difficulty, shield power-up, pause/resume, generated 3D scenery, lighting and fog, score persistence, responsive controls, and mobile-friendly layout.
 
 Run with a static server because ES modules require HTTP:
 
@@ -8,4 +8,4 @@ Run with a static server because ES modules require HTTP:
 npx serve .
 ```
 
-Controls: A/D or arrow keys to change lanes, W/Space/Up to jump, S/Down to slide.
+Controls: **A/D** or **←/→** lanes, **W/Space/↑** jump, **S/↓** slide, **P** pause. Collect the purple shield for temporary protection. Original code-generated geometry is used.
