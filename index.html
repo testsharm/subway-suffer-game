@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#081225" />
+  <title>Metro Dash</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✦</span><span>METRO DASH</span></div>
+      <div class="hud" aria-live="polite">
+        <span>RUN <b id="score">0</b></span>
+        <span>BEST <b id="best">0</b></span>
+        <span>COINS <b id="coins">0</b></span>
+      </div>
+    </header>
+    <section class="canvas-wrap">
+      <canvas id="game" width="960" height="600" aria-label="Metro Dash endless runner"></canvas>
+      <div id="start-panel" class="panel">
+        <p class="eyebrow">NIGHT LINE // 07</p>
+        <h1>Metro<br /><em>Dash</em></h1>
+        <p class="tagline">Own the rails. Beat the rush.</p>
+        <button id="start-btn">Start running <span>→</span></button>
+        <p class="controls">← → change lanes &nbsp; · &nbsp; ↑ / SPACE jump &nbsp; · &nbsp; ↓ slide</p>
+      </div>
+      <div id="gameover-panel" class="panel hidden">
+        <p class="eyebrow">RUN COMPLETE</p>
+        <h2>Signal lost.</h2>
+        <p class="final-score">Score <strong id="final-score">0</strong></p>
+        <button id="again-btn">Run it back <span>↻</span></button>
+      </div>
+      <div class="touch-controls" aria-label="Touch controls">
+        <button data-action="left">←</button><button data-action="jump">↑</button><button data-action="slide">↓</button><button data-action="right">→</button>
+      </div>
+    </section>
+    <footer>COLLECT ✦ AVOID ◆ &nbsp; // &nbsp; SPEED INCREASES WITH DISTANCE</footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

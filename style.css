@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+:root { color-scheme: dark; --ink:#e8f1ff; --muted:#8a9ab5; --cyan:#43e6d1; --pink:#ff547b; }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; display:grid; place-items:center; background:#050914; color:var(--ink); font-family:'Space Mono',monospace; }
+.game-shell { width:min(1100px,100%); padding:22px; }
+.topbar { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+.brand { font:700 20px 'Barlow Condensed',sans-serif; letter-spacing:3px; display:flex; align-items:center; gap:10px; }
+.brand-mark { color:var(--cyan); font-size:25px; }
+.hud { display:flex; gap:22px; color:var(--muted); font-size:11px; letter-spacing:1px; }
+.hud b { color:var(--ink); font-size:14px; margin-left:5px; }
+.canvas-wrap { position:relative; overflow:hidden; border:1px solid #1b2c4b; border-radius:12px; box-shadow:0 20px 70px #0008, inset 0 0 80px #13294d55; }
+canvas { display:block; width:100%; height:auto; background:#0a1327; }
+.panel { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding:8%; background:linear-gradient(90deg,#071020f2 0%,#071020b0 46%,transparent 85%); }
+.panel.hidden { display:none; }
+.eyebrow { color:var(--cyan); letter-spacing:4px; font-size:11px; margin:0 0 12px; }
+h1,h2 { font:800 clamp(65px,10vw,116px)/.78 'Barlow Condensed',sans-serif; letter-spacing:-3px; text-transform:uppercase; margin:0; }
+h1 em { color:var(--pink); font-style:normal; }
+h2 { font-size:75px; letter-spacing:-1px; }
+.tagline { color:#bdc9dc; margin:23px 0 28px; font-size:13px; }
+button { border:0; cursor:pointer; color:#06101d; background:var(--cyan); font:700 14px 'Space Mono',monospace; padding:15px 19px; border-radius:3px; box-shadow:5px 5px 0 #1d8790; transition:transform .15s, box-shadow .15s; }
+button:hover { transform:translate(-2px,-2px); box-shadow:7px 7px 0 #1d8790; }
+button span { font-size:20px; margin-left:18px; }
+.controls, footer { color:var(--muted); font-size:10px; letter-spacing:.3px; }
+.controls { margin-top:28px; }
+.final-score { color:var(--muted); margin:22px 0; } .final-score strong { color:var(--cyan); font-size:30px; margin-left:8px; }
+footer { text-align:center; padding-top:14px; font-size:9px; letter-spacing:2px; }
+.touch-controls { display:none; position:absolute; bottom:15px; left:50%; transform:translateX(-50%); gap:7px; }
+.touch-controls button { padding:9px 14px; box-shadow:none; opacity:.8; }
+@media (max-width:650px) { .game-shell{padding:10px}.topbar{margin-bottom:8px}.brand{font-size:16px}.hud{gap:8px;font-size:9px}.hud b{font-size:11px}.touch-controls{display:flex}.controls{font-size:9px}.panel{padding:9%}.canvas-wrap{border-radius:7px} }
